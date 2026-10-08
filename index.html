@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Landing page de una tienda deportiva con productos, asesoría y equipamiento para diferentes disciplinas."
+  >
+  <title>SportZone | Tienda Deportiva</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f6f8;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #111827;
+      color: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #22c55e;
+    }
+
+    .hero {
+      min-height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #111827, #1f2937);
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.3rem, 6vw, 4rem);
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #d1d5db;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #22c55e;
+      color: #052e16;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #16a34a;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .services {
+      padding: 70px 8%;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .services-intro {
+      color: #6b7280;
+      margin-bottom: 40px;
+    }
+
+    .services-grid {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .service-card {
+      background-color: white;
+      padding: 35px 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .service-card span {
+      display: block;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .service-card h3 {
+      margin-bottom: 12px;
+      color: #111827;
+    }
+
+    .service-card p {
+      color: #6b7280;
+    }
+
+    .contact {
+      background-color: #22c55e;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #052e16;
+    }
+
+    .contact p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      color: #14532d;
+    }
+
+    .contact .btn {
+      background-color: #111827;
+      color: white;
+    }
+
+    .contact .btn:hover {
+      background-color: #374151;
+    }
+
+    footer {
+      background-color: #111827;
+      color: #9ca3af;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        width: 100%;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 10px;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 60vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">SportZone</div>
+
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <h1>Equípate para superar tus límites</h1>
+
+        <p>
+          En SportZone encontrarás productos deportivos de calidad,
+          asesoría personalizada y todo lo necesario para llevar tu
+          entrenamiento al siguiente nivel.
+        </p>
+
+        <a href="#contacto" class="btn">Contáctanos</a>
+      </div>
+    </section>
+
+    <section class="services" id="servicios">
+      <h2>Nuestros servicios</h2>
+
+      <p class="services-intro">
+        Soluciones pensadas para deportistas principiantes, aficionados
+        y equipos deportivos.
+      </p>
+
+      <div class="services-grid">
+
+        <article class="service-card">
+          <span>🏃</span>
+          <h3>Equipamiento deportivo</h3>
+          <p>
+            Calzado, ropa, accesorios y equipo para diferentes disciplinas
+            deportivas y niveles de entrenamiento.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <span>🎯</span>
+          <h3>Asesoría personalizada</h3>
+          <p>
+            Te ayudamos a elegir el producto adecuado de acuerdo con tu
+            actividad, objetivos y necesidades.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <span>🏆</span>
+          <h3>Equipamiento para equipos</h3>
+          <p>
+            Soluciones para escuelas, clubes y equipos que necesitan
+            uniformes, accesorios y material deportivo.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <h2>¿Listo para comenzar?</h2>
+
+      <p>
+        Ponte en contacto con nosotros y encuentra el equipo ideal
+        para alcanzar tus próximos objetivos deportivos.
+      </p>
+
+      <a href="mailto:contacto@sportzone.com" class="btn">
+        Enviar mensaje
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 SportZone. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
